@@ -71,18 +71,3 @@
 
 /* media queries */
 
-@media screen and (max-width: 750px) {
-  .weather{
-    /* min-height: 90vh; */
-    overflow: hidden;
-    width: 100%;
-  }
-  .weather-data{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    /* margin-top: 590px; */
-  }
-
-  
-}
