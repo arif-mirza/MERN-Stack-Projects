@@ -8,10 +8,14 @@ import TypingEffect from "../components/TypingEffect";
 
 function HomePage() {
 
+  const email = "mirzaarif919@gamil.com";
+  const subject = "Inquiry from Portfolio";
+  const body = "Hello, I would like to discuss...";
+
 
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <div className="py-3">
         <div className="container">
           <div className="row">
@@ -21,10 +25,10 @@ function HomePage() {
                   className="d-flex justify-content-center align-items-center mt-5"
                   id="social-Icons"
                 >
-                  <a href="https://api.whatsapp.com/send?phone=923036319414">
+                  <a href="https://api.whatsapp.com/send?phone=923056223332">
                     <i class="fa-brands fa-whatsapp"></i>
                   </a>
-                  <a href="https://www.linkedin.com/in/muhammad-arif-1185362b8/">
+                  <a href="https://www.linkedin.com/in/muhammad-arif-mirza-1185362b8/">
                     <i class="fa-brands fa-linkedin"></i>
                   </a>
                   <a href="https://github.com/arif-mirza">
@@ -33,7 +37,7 @@ function HomePage() {
                   <a href="https://www.facebook.com/profile.php?id=100093423030695">
                     <i class="fab fa-facebook"></i>
                   </a>
-                  <a href="https://www.instagram.com/mirzaarif723/">
+                  <a href="https://www.instagram.com/arifmirza3332/">
                     <i class="fab fa-instagram"></i>
                   </a>
                   <a href="#">
@@ -41,11 +45,12 @@ function HomePage() {
                   </a>
                 </div>
                 <div className="home-content " id="home-content">
-                  <h5 className="text-white">Hi, I am</h5>
+                  <h5 style={{color: "#9fa2ab" }}>Hi, I am</h5>
                   <h1 id="name">Muhammad Arif Mirza</h1>
                   <p
-                    className="text-white fw-bold typing-effect"
-                    style={{ fontSize: "20px" }}
+                    className="fw-bold typing-effect"
+                    style={{ fontSize: "20px", color : "#9fa2ab" }}
+                    
                   >
                     i'm a{" "}
                     <span id="typing-effect">
@@ -61,12 +66,18 @@ function HomePage() {
                       />
                     </span>
                   </p>
-                  <p>
+                  <p style={{color: "#9fa2ab" }}>
                     As a full-stack developer, I create robust web applications,
                     leveraging my expertise in both frontend and backend
                     technologies. Passionate about innovative solutions.
                   </p>
+                  <a 
+             href={`mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`}
+             >
+
                   <Button text="Contact me" />
+             </a>
+                  
                 </div>
               </div>
             </div>

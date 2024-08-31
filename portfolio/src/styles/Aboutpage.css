@@ -90,6 +90,8 @@
   display: flex;
   column-gap: 90px;
   list-style: none;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
 }
 
  .professional-list .list {
@@ -123,6 +125,8 @@
 .tect-list li img{
   width: 35px;
   margin-right: 10px;
+  
+  
 }
 
 #about-social-Icons{
@@ -142,4 +146,34 @@
   transform: scale(1.3) ;
   transition: 0.4s ease;
   text-shadow: 0 0 10px #4cc9f0, 0 0 20px #4cc9f0, 0 0 30px #4cc9f0;
+}
+
+@media screen and (max-width: 570px) {
+  .img-sec{
+    margin-bottom: 20px;
+    margin: 10px auto;
+  }
+  .btn-sec{
+  
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .tech-main-sec{
+   font-size: 60%;
+   
+  }
+  .tect-list li img{
+    width: 29px;
+  }
+  .img-sec{
+    border: 1px solid #fff;
+    margin-bottom: 30px;
+
+  }
+  .img-sec img{
+    width: 250px;
+    margin-bottom: 30px;
+  }
+
 }

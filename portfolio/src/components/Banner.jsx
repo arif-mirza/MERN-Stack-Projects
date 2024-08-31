@@ -42,7 +42,9 @@ const ImageWith3DEffect = () => {
         src={banner}
         
         alt="3D Effect Image"
-        style={{ width: '100%',  borderRadius: '53% 59% 59% 67% / 54% 6% 95% 78%'}}
+        style={{ width: '100%',  borderRadius: '53% 59% 59% 67% / 54% 6% 95% 78%'
+          
+        }}
         id='banner-img'
       />
     </div>

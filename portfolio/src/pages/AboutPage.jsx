@@ -18,6 +18,7 @@ import mongodb from "../assets/icons/mongodb.png";
 import git from "../assets/icons/git.png";
 import restApi from "../assets/icons/restapi.png";
 import javascript from "../assets/icons/javascript.png"
+import CV from "../assets/images/Muhammad Arif Official(f).pdf"
 
 
 
@@ -60,8 +61,8 @@ function AboutPage() {
 
   return (
     <>
-    <div className="py-5">
-      <div className="container">
+    <div className="py-5" id='#About'>
+      <div className="container py-5">
         <div className="row text-center">
           <div className="col-12">
             <h1 id='section-title-01'>About Me</h1>
@@ -71,7 +72,7 @@ function AboutPage() {
       </div>
 
       {/* 2 */}
-      <div className="container">
+      <div className="container" >
         <div className="row">
           {/* image sec */}
           <div className="col-12 col-md-4">
@@ -82,8 +83,8 @@ function AboutPage() {
           </div>
           {/* content sec */}
           <div className="col-12 col-md-8 d-flex justify-content-start align-items-center flex-column">
-            <div className="info">
-              <h2 className='mb-4 fw-bold about-name'>Hello I'm Muhammad Arif Mirza</h2>
+            <div className="info" style={{color: "#9fa2ab" }}>
+              <h2 className='mb-4 fw-bold about-name text-white'>Hello I'm Muhammad Arif Mirza</h2>
               <h5>A Lead <span>
               <TypingEffect
                         strings={[
@@ -124,11 +125,11 @@ function AboutPage() {
             </ul>
               </div>
 
-              <h2 className='about-name fw-bold mt-5'>Technologies</h2>
+              <h2 className='about-name fw-bold mt-5 text-white'>Technologies</h2>
               <p>Here are a few technologies I've been working with recently:</p>
               <div className="container">
-                <div className="row">
-                  <div className="col-12 col-md-6">
+                <div className="row tech-main-sec">
+                  <div className=" col-6">
                     <ul className='tect-list'>
                     <li className='list-1'> < img src={javascript} alt="" />JavaScript</li>
                       <li className='list-2'> < img src={html} alt="" />HTML</li>
@@ -140,7 +141,7 @@ function AboutPage() {
                       <li className='list-8'>  < img src={bootstrap} alt="" />Bootstrap</li>
                     </ul>
                   </div>
-                  <div className="col-12 col-md-6">
+                  <div className="col-6">
                     <ul className='tect-list'>
                   <li className='list-1'> < img src={react} alt="" />React</li>
                   <li className='list-1'> < img src={expressjs} alt="" />Express-JS</li>
@@ -167,12 +168,13 @@ function AboutPage() {
 
 
               <div className="btn-sec fw-bold px-2 py-3 d-flex  align-items-center" >
-              <Button text="Download CV" className="fw-bold px-5" />
+            <a href={CV} target="_blank" rel="noopener noreferrer"> 
+               <Button text="Download CV" className="fw-bold px-5" /> </a>
               <div className="social-icons mx-5"  id="about-social-Icons">
-              <a href="https://api.whatsapp.com/send?phone=923036319414">
+              <a href="https://api.whatsapp.com/send?phone=923056223332">
                     <i class="fa-brands fa-whatsapp"></i>
                   </a>
-                  <a href="https://www.linkedin.com/in/muhammad-arif-1185362b8/">
+                  <a href="https://www.linkedin.com/in/muhammad-arif-mirza-1185362b8/">
                     <i class="fa-brands fa-linkedin"></i>
                   </a>
                   <a href="https://github.com/arif-mirza">
@@ -181,7 +183,7 @@ function AboutPage() {
                   <a href="https://www.facebook.com/profile.php?id=100093423030695">
                     <i class="fab fa-facebook"></i>
                   </a>
-                  <a href="https://www.instagram.com/mirzaarif723/">
+                  <a href="https://www.instagram.com/arifmirza3332/">
                     <i class="fab fa-instagram"></i>
                   </a>
                   <a href="#">

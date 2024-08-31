@@ -55,3 +55,15 @@
   text-shadow: 0 0 10px #4cc9f0, 0 0 20px #4cc9f0, 0 0 30px #4cc9f0;
 
 }
+
+@media screen and (max-width: 570px) {
+  #name{
+    font-size: 40px;
+  }
+  #home-content{
+    font-size: 19px;
+  }
+  #banner-img{
+    width: 70px;
+  }
+}
