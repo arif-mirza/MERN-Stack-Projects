@@ -5,8 +5,8 @@ import "./App.css";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min";
-import "../node_modules/bootstrap/dist/js/bootstrap.min.js";
+import "../node_modules/bootstrap/dist/js/bootstrap.bundle.js";
+import "../node_modules/bootstrap/dist/js/bootstrap.bundle.js";
 import Experience from "./pages/Experience.jsx";
 import WorkPage from "./pages/WorkPage";
 import ContactPage from "./pages/ContactPage.jsx";
@@ -14,6 +14,7 @@ import ContactPage from "./pages/ContactPage.jsx";
 import Navbar from "./components/Navbar";
 import Loader from "./components/Loader.jsx";
 import "../src/styles/Loader.css";
+
 
 function App() {
   const homeRef = useRef(null);

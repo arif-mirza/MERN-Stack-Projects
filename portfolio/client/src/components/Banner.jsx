@@ -11,8 +11,8 @@ const ImageWith3DEffect = () => {
     const { offsetX: x, offsetY: y } = e.nativeEvent;
 
     // Calculate the rotation based on cursor position
-    const rotateX = ((y / height) - 0.6) * 50; // Adjusts the sensitivity
-    const rotateY = ((x / width) - 0.6) * -50;
+    const rotateX = ((y / height) - 0.9) * 30; // Adjusts the sensitivity
+    const rotateY = ((x / width) - 0.9) * -30;
 
     setTransform(`rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.05)`);
   };

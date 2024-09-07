@@ -64,7 +64,7 @@
   .skill-btns{
     border-left: 1px solid #3f3d3d;
     min-width: 200px;
-   
+    text-align: start !important;
   }
   .skill-btns .skill-btn{
     padding: 7px 25px;
@@ -75,10 +75,12 @@
     color: #fff;
     font-size: 15px;
     width: 150px;
+    align-items: start !important;
   
   }
   .skill-btns .skill-btn.active{
     border-left: 3px solid #4cc9f0;
+    transition: 0.3s ease;
   }
   .skill-btns .skill-btn:hover{
     background-color: #313d4c;

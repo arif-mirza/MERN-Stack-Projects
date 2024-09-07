@@ -3,12 +3,13 @@ import "../styles/Navbar.css";
 import logo from "../assets/images/nav-logo.png";
 
 
+
 // function Navbar() {
 
-// //   window.addEventListener("scroll", function(){
-// //     const header = document.querySelector("header");
-// //     header.classList.toggle("sticky", window.scrollY > 0);
-// // })
+  window.addEventListener("scroll", function(){
+    const header = document.querySelector("header");
+    header.classList.toggle("sticky", window.scrollY > 0);
+})
 
 
 
@@ -17,7 +18,7 @@ function Navbar() {
   return (
     <>
 <header id="header">
-<nav class="navbar navbar-dark navbar-expand-lg bg-body-tertiar" data-bs-theme="dark" >
+<nav class="navbar navbar-dark navbar-expand-lg bg-body-tertiar sticky-top" data-bs-theme="dark" >
   <div class="container">
     <a class="navbar-brand" href="#"> <img src={logo} className="logo" /><span style={{color: "#9fa2ab"}}>MirzaArif</span></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,9 +43,7 @@ function Navbar() {
         <li class="nav-item">
           <a class="nav-link hover-effect active"  href="#contact">Contact</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link  hover-effect active" href="#blog" >Blog</a>
-        </li>
+        
       </ul>
      
     </div>

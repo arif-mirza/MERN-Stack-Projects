@@ -4,7 +4,7 @@ import "../styles/Button.css";
 function Button({text}) {
   return (
     <>
-    <button className='glow-button'>{text}</button>
+    <button className='glow-button'><span className='text'>{text}</span></button>
     </>
   )
 }

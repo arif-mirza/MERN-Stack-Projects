@@ -59,9 +59,11 @@ function HomePage() {
                           "Software Engineer",
                           "MERN stack Developer",
                           "Mobile Application Developer",
+                          "Leetcode Problem Solver"
                         ]}
-                        typeSpeed={40}
-                        backSpeed={50}
+                        typeSpeed={20}
+                        backSpeed={15}
+                        delay = {60}
                         loop={true}
                       />
                     </span>
