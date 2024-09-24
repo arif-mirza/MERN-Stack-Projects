@@ -29,6 +29,8 @@ function createCard (ProjectCard){
     <Project_card 
     key = {ProjectCard.id}
     title = {ProjectCard.title}
+    link = {ProjectCard.link}
+    live = {ProjectCard.live}
     info = {ProjectCard.info}
     tech = {ProjectCard.tech}  
     />

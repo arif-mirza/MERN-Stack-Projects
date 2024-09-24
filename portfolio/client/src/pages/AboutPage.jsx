@@ -19,14 +19,16 @@ import git from "../assets/icons/git.png";
 import restApi from "../assets/icons/restapi.png";
 import javascript from "../assets/icons/javascript.png"
 import CV from "../assets/images/Muhammad Arif Official(f).pdf"
-
+import redux from "../assets/icons/redux.png";
+import yup from "../assets/icons/yup.png"
 
 
 import TypingEffect from "../components/TypingEffect";
+import tectData from '../DB/teckStack';
 
 {/* <h3 class="counter" data-target="3000"></h3> */}
 
-function AboutPage() {
+function AboutPage(props) {
 
 useEffect(() => {
   // counter functionallity
@@ -54,6 +56,19 @@ useEffect(() => {
 
 },[])
 
+
+// const createItem = (item) => {
+//   return (
+//     <SingleItem 
+//     icon = {props.icon}
+//     title = {item.title}
+//     id={props.id}
+    
+    
+    
+//     />
+//   )
+// }
 
   
 
@@ -144,6 +159,11 @@ useEffect(() => {
                       <li className='list-6'>  < img src={sass} alt="" />Sass</li>
                       <li className='list-7'>  < img src={scss} alt="" />Scss</li>
                       <li className='list-8'>  < img src={bootstrap} alt="" />Bootstrap</li>
+                      <li className='list-8'>  < img src={redux} alt="" />Redux</li>
+
+                      {/* {tectData.map((item) => {
+                        return createItem(item);
+                      })} */}
                     </ul>
                   </div>
                   <div className="col-6">
@@ -156,6 +176,7 @@ useEffect(() => {
                   <li className='list-1'> < img src={firebase} alt="" />Firebase</li>
                   <li className='list-1'> < img src={node} alt="" />Node-JS</li>
                   <li className='list-1'> < img src={restApi} alt="" />Rest-APIs</li>
+                  <li className='list-1'> < img src={yup} alt="" />YUP Validation</li>
 
                   </ul>
                   </div>

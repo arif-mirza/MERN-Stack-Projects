@@ -11,10 +11,10 @@ function Project_card(props) {
 
       <div className="card">
         <div className="social">
-          <a href="#!">
+          <a href={props.live} target="_blank" rel="noopener noreferrer">
             <i class="fa-regular fa-folder-closed"></i>
           </a>
-          <a href="#!">
+          <a href={props.link} target="_blank" rel="noopener noreferrer" >
             <i className="fab fa-github"></i>
           </a>
         </div>

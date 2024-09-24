@@ -18,7 +18,7 @@ const myWorks = [
     description: "This project create images by using prompt.In this project we use openAI for create images",
     tech : "HTML5 CSS3 Bootstrap5 React-JS Context-API Generative AI, Langchain, Python",
     img : work5,
-    link : "www.google.com",
+    link :"www.google.com",
   },
   {
     id : 2,
@@ -26,7 +26,7 @@ const myWorks = [
     description: "Built a Currency Converter application that enables real-time currency conversions. Integrated APIs and implemented a user-friendly interface using React, JavaScript, and responsive design techniques",
     tech : "React, JavaScript, API integration, HTML5, CSS3, Responsive Design",
     img : work7,
-    link : "www.google.com",
+    link : "https://github.com/arif-mirza/Javascript-Projects/tree/main/Project%2011/Currency%20rate%20converter",
   },
   {
     id : 3,
@@ -34,7 +34,7 @@ const myWorks = [
     description: "Developed a Cryptocurrency Rate Tracker that provides real-time coin prices. Utilized React, API integration, and responsive design for a seamless user experience across all devices.",
     tech : "React, API integration, JavaScript, HTML5, CSS3, Responsive Design",
     img : work4,
-    link : "www.google.com",
+    link : "https://github.com/arif-mirza/Javascript-Projects/tree/main/project%204/crypto-rate%20website",
   },
   {
     id : 4,
@@ -42,7 +42,7 @@ const myWorks = [
     description: "This project create images by using prompt.In this project we use openAI for create images",
     tech : "HTML5 CSS3 Bootstrap5 React-JS Context-API Generative AI, Langchain, Python",
     img : work6,
-    link : "www.google.com",
+    link : "https://github.com/arif-mirza/Javascript-Projects/tree/main/Project%2018/wetherApp",
   },
   
   

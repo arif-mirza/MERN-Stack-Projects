@@ -23,7 +23,7 @@ function work_1(props) {
                 <p className='tech'>{props.tech}
                 </p>
                 <div className="work-icon">
-                <a href="#">
+                <a href={props.link} target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-github"></i>
                   
                   </a>
