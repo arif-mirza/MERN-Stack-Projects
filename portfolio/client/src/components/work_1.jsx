@@ -1,15 +1,42 @@
-import React from 'react'
+import React ,{useEffect} from 'react'
 import "../styles/Workpage.css";
 import work1 from "../assets/images/work-1.png";
 import Works_imgs from '../components/Works_imgs';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 function work_1(props) {
+
+  useEffect(() => {
+    // Initialize AOS
+    AOS.init({
+      duration: 500,  // Animation duration in milliseconds
+      once: false,     // Allow animation to happen multiple times
+    });
+  
+    // Reset animations on scroll
+    window.addEventListener('scroll', AOS.refresh);
+  
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener('scroll', AOS.refresh);
+    };
+  }, []);
+
+
+
+
+
+
+
+
+
+
   return (
     <>
 
-<div className="container py-5">
+<div className="container py-5"  data-aos="zoom-in">
         <div className="row">
           <div className="col-12">
            <div className="row">

@@ -5,6 +5,7 @@ import work4 from "../assets/images/work-4.png";
 import work5 from "../assets/images/work-5.png";
 import work6 from "../assets/images/work-6.png";
 import work7 from "../assets/images/work-07.jpg";
+import work8 from '../assets/images/work-8.png';
 
 
 
@@ -12,6 +13,14 @@ import work7 from "../assets/images/work-07.jpg";
 
 
 const myWorks = [
+  {
+    id : 5,
+    title: "Full Stack ecommerce Store",
+    description: "Developed a responsive e-commerce store with React and Redux Toolkit, offering a sleek design, intuitive navigation, and a seamless user shopping experience.",
+    tech : "HTML5 CSS3 Bootstrap5 React-JS Context-API, YUP , AOS, Redux-Toolkit, Firebase",
+    img : work8,
+    link :"https://mjcollection.netlify.app/",
+  },
   {
     id : 1,
     title: "AI Image Generator",

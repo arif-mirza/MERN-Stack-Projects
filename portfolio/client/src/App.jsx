@@ -1,6 +1,9 @@
-import React, { useState, useRef, useEffect } from "react"; // Combine useState and useRef in one import
-import reactLogo from "./assets/react.svg";
+import React from "react";
+import { useState, useRef, useEffect } from "react"; // Combine useState and useRef in one import//-
+import AOS from "aos";
+import 'aos/dist/aos.js';
 
+import reactLogo from "./assets/react.svg";
 import "./App.css";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
@@ -14,7 +17,6 @@ import ContactPage from "./pages/ContactPage.jsx";
 import Navbar from "./components/Navbar";
 import Loader from "./components/Loader.jsx";
 import "../src/styles/Loader.css";
-
 
 function App() {
   const homeRef = useRef(null);
@@ -70,6 +72,7 @@ function App() {
               <ContactPage />
             </div>
           </div>
+          
         </>
       )}
     </>

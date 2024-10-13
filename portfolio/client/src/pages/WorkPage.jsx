@@ -1,4 +1,4 @@
-import React from "react";
+import React , {useEffect} from "react";
 import "../styles/Workpage.css";
 import work1 from "../assets/images/work-1.png";
 import Work_1 from "../components/work_1";
@@ -7,9 +7,28 @@ import myWorks from "../DB/works.js";
 import Project_card from "../components/Project_card.jsx";
 import ProjectCards from "../DB/project_card.js";
 import Button from '../components/Button';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function WorkPage() {
   
+  useEffect(() => {
+    // Initialize AOS
+    AOS.init({
+      duration: 500, // Animation duration in milliseconds
+      once: false, // Allow animation to happen multiple times
+    });
+
+    // Reset animations on scroll
+    window.addEventListener("scroll", AOS.refresh);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", AOS.refresh);
+    };
+  }, []);
+
+
 
   function createWork (myWork){
     return (
@@ -20,6 +39,7 @@ function WorkPage() {
       tech = {myWork.tech}  
       img = {myWork.img}
       link = {myWork.link}
+       
       />
     )
   }
@@ -45,8 +65,8 @@ function createCard (ProjectCard){
         <div className="container py-5">
           <div className="row text-center">
             <div className="col-12">
-              <h1 id="section-title-05">Projects</h1>
-              <h1 id="section-title-06">Projects</h1>
+              <h1 id="section-title-05" data-aos="fade-right">Projects</h1>
+              <h1 id="section-title-06" data-aos="fade-left">Projects</h1>
             </div>
           </div>
         </div>
